@@ -1,0 +1,143 @@
+<html>
+
+<head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+     <link rel="icon" type="image/x-icon" href="Icons/logo.png">
+     <link rel="stylesheet" type="text/css" href="httpsh://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="1css.css">
+</head>
+
+<body>
+<!-- header start -->
+   <header class="header">
+    <!-- logo -->
+     <a href="1page.html" class="logo">
+      <img src="logo2.jpg">
+      </a>
+
+<!-- nav bar start -->
+  <nav class="navbar">
+  <input type="checkbox" id="check">
+   <label for="check" class="check-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+
+<ul>
+  <li><a href="1page.html">Home</a></li>
+  <li><a href="2menu.html">Menu</a></li>
+  <li><a class="active" href="3rdpage.html">About Us</a></li>
+</ul>
+
+<!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+</nav>
+<!-- nav bar end -->
+
+<!--hyperlink with icons (search, cart, profile, menu button)-->
+    <div class="icons">
+    <div class="cart-container" onmouseover="showCartForm()" onmouse="hideCartForm()">
+      <a href="4-cart.html">
+        <div class="fas fa-shopping-cart" id="cartButton"></div>
+      </a>
+      <div class="cart-form" id="cart-form">
+        <form>
+          <div id="cartItems"></div>
+          <div id="total-price">Total Price: P<span id="totalPrice">0.00</span></div>
+        </form>
+      </div>
+    </div>
+      <!--hyperlink with icons (search, cart, profile, menu button)-->
+    </header>
+    <!--header end here-->
+
+    <!--pagecontent-->
+<div class="content">
+  <section class="about">
+    <div class="about-image">
+      <img src="background.jpg">
+    </div>
+    <div class="about-content">
+      <h2>Have your shirt at TF</h2>
+      <p>BiLI NA KAYO DAMIT</p>
+    </div>
+  </section>
+</div>
+
+<!--topsellers-->
+<section class="menu" id="menu">
+  <h1 class="heading">BEST <span> SELLING</span>DRINKS</h1>
+  
+  <div class="menu"><!--Menuopeningtag-->
+    <div class="container menu-section">
+      <!--product 1-->
+      <a href="2-menu.html#ballin'">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="ballin'.jpg" alt="ballin' shirt">
+          </div>
+          <div class="menu-content">
+            <h3>ballin'</h3>
+            <p>shirt na may bola</p>
+          </div>
+        </div>
+      </a>
+      
+      <!--product 2-->
+      <a href="2-menu.html#ashray cozy">
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="ashray cozy.jpg" alt="ashray cozy short">
+          </div>
+          <div class="menu-content">
+            <h3>ashray cozy</h3>
+            <p>cozy na short na kula ash</p>
+          </div>
+        </div>
+      </a>
+    </div><!--menuclosingtag-->
+    <div class="to-menu">
+      <a href="2menu.html">See more shirt here!</a>
+    </div>
+</section>
+  <!--topseller-->
+  
+  <!--aboutusstart-->
+  
+  <!--aboutusend-->
+  
+  <script src="2-menu.js"></script>
+  
+  <!--footerstart-->
+  <section class="footer">
+    
+    <div class="container">
+      <div class="footer-box-1">
+        <h3>Location</h3>
+        <a href="_" target=_blank>College of Industrial Education, 660, TUP, Ermita, Manila</a>
+      </div>
+    </div>
+    
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Stay update with our latest</p>
+      <form>
+        <input type="email" name="email" placeholder="name@gmail.com">
+        <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+      </form>
+    </div>
+    <div class="footer-box">
+      <h3>Contacy us</h3>
+      <p>Connect Us on:</p>
+      <div class="icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </section>
+  <!--footerend-->
+  
+</body>
+</html>

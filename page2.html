@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="widthw=device-width, initial-scale=1">
+  <title>Menu</title>
+  <link rel="icon" type="imagei/x-icon" href="IconsI/logo.png">
+  <link rel="stylesheet" type="text/css" href="httpsh://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--css file--->
+  <link rel="stylesheet" type="text/css" href="2page.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="header">
+    <!-- logo -->
+    <a href="1-index.html" class="logo">
+      <img src="logo2.jpg">
+    </a>
+    
+    <!--nav bar start -->
+    <nav class="navbar">
+      <input types="checkbox" id="check">
+      <label for="check" class="check-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="1page.html">Home</a></li>
+        <li><a class="active" href="2menu.html">Menu</a></li>
+        <li><a class="active" href="3rdpage.html">About Us</a></li>
+      </ul>
+      <!--<div id="menu-btn" class="fas -barsfa"></div> -->
+    </nav>
+    <!--nav bar end -->
+    
+
+    <!--hyperlink with icons (search, cart, profile, menu button)-->
+    <div class="icons">
+    <div class="cart-container" onmouseover="showCartForm()" onmouse="hideCartForm()">
+      <a href="4-cart.html">
+        <div class="fas fa-shopping-cart" id="cartButton"></div>
+      </a>
+      <div class="cart-form" id="cart-form">
+        <form>
+          <div id="cartItems"></div>
+          <div id="total-price">Total Price: P<span id="totalPrice">0.00</span></div>
+        </form>
+      </div>
+    </div>
+      <!--hyperlink with icons (search, cart, profile, menu button)-->
+    </header>
+    <!--header end here-->
+    
+    <!--Menu Section-->
+    <section class="menu" id="menu">
+      <h1 class="heading">OUR <span>Menu</span></h1>
+      <p class="heading-description">Get a cozy t-shirt this year end!</p>
+    
+             <div class="category-text"><h3>SHIRT</h3></div>
+        
+        <div class="container menu-section">
+          <!--Product 1-->
+        <div class="menu-box" id="Texas White Tee">
+          <div class="menu-img">
+            <img src="white tee.jpg" alt="White Tee">
+          </div>
+          <div class="menu-content">
+            <h3>A kid from texas</h3>
+            <p> White T-shirt American size</p>
+            <div onclick="addToCart('A kid from texas (small)', 'P500.00', 'Product/No BG/white tee.jpg', 'Item1-s'); return false;">
+              <button id="Item1-s">Small <span>P500.00 </span></button><!--small-->
+            </div>
+            
+            <div onclick="addToCart('A kid from texas (medium)', 'P600.00', 'Product/No BG/white tee.jpg', 'Item1-m'); return false;">
+              <button id="Item1-m">Medium <span>P600.00</span></button><!--Medium-->
+            </div>
+            
+            <div onclick="addToCart('A kid from texas (large)', 'P700.00', 'Product/No BG/white tee.jpg', 'Item1-l'); return false;">
+              <button id="Item1-l">Large <span>P700.00</span></button><!--Large-->
+            </div>
+        </div>
+      </div>
+          
+     <!--product 2-->
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="black tee.jpg" alt="Black Tee">
+          </div>
+          <div class="menu-content">
+            <h3>A kid from texas</h3>
+            <p>Black T-shirt American Size</p>
+            <div onclick="addToCart('A kid from texas (small)', 'P500.00', 'Product/No BG/black tee.jpg', 'Item2-s'); return false;">
+              <button id="Item2-s">Small <span>P500.00 </span></button><!--small-->
+            </div>
+            
+            <div onclick="addToCart('A kid from texas (medium)', 'P600.00', 'Product/No BG/black tee.jpg', 'Item2-m'); return false;">
+              <button id="Item2-m">Medium <span>P600.00</span></button><!--Medium-->
+            </div>
+            
+            <div onclick="addToCart('A kid from texas (large)', 'P700.00', 'Product/No BG/black tee.jpg', 'Item2-l'); return false;">
+              <button id="Item2-l">Large <span>P700.00</span></button><!--Large-->
+            </div>
+        </div>
+      </div>   
+     <!--product 3-->
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="ballin'.jpg" alt="Ballin">
+          </div>
+          <div class="menu-content">
+            <h3>Ballin'</h3>
+            <p>Ballers t-shirt american size</p>
+            <div onclick="addToCart('Ballin (small)', 'P500.00', 'Product/No BG/ballin'jpg, 'Item3-s'); return false;">
+              <button id="Item3-s">Small <span>P500.00 </span></button><!--small-->
+            </div>
+            
+            <div onclick="addToCart('Ballin (medium)', 'P600.00', 'Product/No BG/ballin'jpg, 'Item3-m'); return false;">
+              <button id="Item3-m">Medium <span>P600.00</span></button><!--Medium-->
+            </div>
+            
+            <div onclick="addToCart('Iced Cappuccino (large)', 'P700.00', 'Product/No BG/ballin'.jpg, 'Item3-l'); return false;">
+              <button id="Item3-l">Large <span>P700.00</span></button><!--Large-->
+            </div>
+        </div>
+      </div>
+      
+          
+          <!--Add more menu items here with the same structure-->
+        </div>
+        
+             <div class="category-text"><h3>Shorts</h3></div>
+        
+        <div class="container menu-section">
+          <!--Product 1-->
+        <div class="menu-box">
+          <div class="menu-img">
+            <img src="short.jpg" alt="EOE short">
+          </div>
+          <div class="menu-content">
+            <h3>EOE shirt </h3>
+            <p>Cozy short</p>
+            <div onclick="addToCart('EOE short (free size)', 'P400.00', 'Product/No BG/short.jpg', 'Item4-s'); return false;">
+              <button id="Item4-s">free size <span>P400.00 </span></button><!--free size-->
+            </div>
+        </div>
+      </div>
+          
+     <!--product 2-->
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="cozy jorts.jpg" alt="Cozy black jorts">
+          </div>
+          <div class="menu-content">
+            <h3>Cozy black jorts</h3>
+            <p>Jorts free size</p>
+            <div onclick="addToCart('Cozy black jorts (free size)', 'P400.00', 'Product/No BG/cozy jorts.jpg', 'Item5-s'); return false;">
+              <button id="Item5-s">free size <span>P400.00 </span></button><!--free size-->
+            </div>
+          </div>
+        </div>
+             
+     <!--product 3-->
+          <div class="menu-box">
+          <div class="menu-img">
+            <img src="denim jorts.jpg" alt="denim jorts">
+          </div>
+          <div class="menu-content">
+            <h3>Denim jorts</h3>
+            <p>Denim jorts free size</p>
+            <div onclick="addToCart('Denim jorts (free size)', 'P400.00', 'Product/No BG/denim jorts.jpg', 'Item6-s'); return false;">
+              <button id="Item6-s">free size <span>P400.00 </span></button><!--free size-->
+            </div>
+            
+            
+        </div>
+      </div>
+          <!--product 4-->  
+          <div class="menu-box" id="hot-mocha">
+          <div class="menu-img">
+            <img src="ashray cozy.jpg" alt="ashray">
+          </div>
+          <div class="menu-content">
+            <h3>Ashray</h3>
+            <p>Ashray cozy shorts</p>
+            <div onclick="addToCart('ashray (free size)', 'P400.00', 'Product/No BG/ashray cozy.jpg', 'Item7-s'); return false;">
+              <button id="Item7-s">free size <span>P400.00 </span></button><!--free size-->
+            </div>
+            
+           
+        </div>
+      </div>
+    </section>
+      
+      <!--Menu Section End-->
+      
+      <!--footer start-->
+      <section class="footer">
+        
+        <div class="container">
+          <div class="footer-box">
+            <h3>Location</h3>
+            <div class="footer-loc">
+              <a href="__" target=_blank>College of IndustrialJ Education, 660. TUP, Ermita, Manila, 1000</a>
+            </div>
+          </div>
+          
+          <div class="footer-box">
+            <h3>Newsletter</h3>
+            <p>Stay update with out latest</p>
+            <form>
+              <input type="email" name="email" placeholder="name@gmail.com">
+              <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+            </form>
+          </div>
+          
+          <div class="footer-box"></div>
+          <h3>Contact Us</h3>
+          <p>Connect With Us On:</p>
+          <div class="icons"></div>
+          <a href="#"><i class="fa brands fb"></i></a>
+          <a href="#"><i class="fa brands fb"></i></a>
+          <a href="#"><i class="fa brands fb"></i></a>
+        </div>
+        
+      </div>
+    </div>
+      </section>
+  <!--footerend-->
+  <script src="2-menu.js"></script>
+</body>
+</html>
